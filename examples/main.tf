@@ -14,3 +14,6 @@ resource "aws_key_pair" "OPENID_demo_keypair" {
   key_name = "openIDdemo"
   public_key = file(var.public_key_path)
 }
+
+
+# https://xebia.com/blog/how-to-deploy-terraform-to-aws-with-github-actions-authenticated-with-openid-connect/
