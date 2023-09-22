@@ -1,4 +1,4 @@
-# ec2 instance deployment.
+# ec2 instance creation.
 resource "aws_instance" "openID_instance" {
   ami           = "ami-0261755bbcb8c4a84"
   instance_type = var.openID_ec2_inst_type
@@ -17,3 +17,4 @@ resource "aws_key_pair" "OPENID_demo_keypair" {
 
 
 # https://xebia.com/blog/how-to-deploy-terraform-to-aws-with-github-actions-authenticated-with-openid-connect/
+# https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect

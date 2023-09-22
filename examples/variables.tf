@@ -2,6 +2,12 @@ variable "region" {
     type = string
     default = "us-east-1"
 }
+/*
+variable "profile" {
+  type = string
+  description = "profile to deploy infrstructure"
+  default = "personal"
+}*/
 
 variable "public_key_path" {
   type        = string
